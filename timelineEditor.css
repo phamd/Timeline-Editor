@@ -1,0 +1,56 @@
+.sortable-ghost {
+	opacity: 0.2;
+	background: #FA5858;
+}
+.glyphicon-move {
+	cursor: move;
+	cursor: -webkit-grabbing;
+}
+.glyphicon-save, .glyphicon-trash, .timeline-history-item {
+	cursor: pointer;
+}
+
+.timeline-history-item {
+	display: inline-block; width: 11.5em;
+}
+
+input[type="text"].numeric {
+	text-align: right;
+	width: 8em;
+	margin: 0em 0.1em;
+}
+input[type="text"].readonly {
+	background-color: #EEE;
+	border: 1px solid #666;
+	text-align: left;
+	width: 8em;
+	margin: 0em 0.1em;
+}
+.wildcard, input[type="text"].wildcard {
+	background-color: #AEA;
+}
+
+.flexWrapper {;
+    page-break-inside: avoid;
+    display: flex;
+    flex-direction: row;
+}
+.flex {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: fit-content;
+    overflow: none;
+    margin-right: 1em;
+    flex: 0 1 auto;
+    height: 100%;
+    display: block;
+}
+@media screen and (max-width:70em) {
+    .flexWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
